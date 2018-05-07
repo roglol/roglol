@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML text format</title>
+    <style>
+        textarea {
+            resize:none;
+        }
+    html, body {
+        margin: 0;
+        padding:0;}
+        </style>
+</head>
+<body>
+
+    <form action="" method="post">
+       <label> firstname <input type="text" name="firstname" value="jano" maxlength="5" id="firstname"></label> <br>
+       <label>  lastname <input type="text" name="lastname" placeholder="lastname" id="lastname"> <br></label> 
+        <input type="submit" value="Login"><br>
+        comment: 
+        <textarea name="comment" raws="5" cols="100"></textarea><br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="male">Female
+        <input type="radio" name="gender" value="male"> Other
+
+       <br>
+       <input type="checkbox" name="bike" value="bike"> I have a bike
+        <input type="checkbox" name="car" value="car">I have a car
+        <br>
+        <label id ="cars">select car</label>
+
+        <select name="cars[]" >
+                <option value=""></option>
+            <option value="bmw">bmw</option>
+            <option value="vw">vw</option>
+            <option value="maserati">maserati</option>
+            <option value="pagani">pagani</option>
+            
+
+        </select>
+        <br>
+        <button type="submit">login</button>
+        <button type="reset">reset fields</button>
+        <button type="button" onclick="alert('Hello...')">click me</button>
+        <br>
+        <fieldset>
+            <legend>vehicles</legend>
+                <input type="checkbox" name="bike" value="bike"> I have a bike
+                <input type="checkbox" name="car" value="car">I have a car
+
+        </fieldset>
+
+    </form>
+    <p>
+        I <em>love</em> Tbilisi
+    </p>
+    <p>
+            I <i>love</i> Tbilisi
+        </p>
+        <br>
+        <p>
+            Lorem ipsum dolor sit.
+            <strike>lorem ipsum dolor sit.</strike>
+        </p>
+        <br>
+        H<sub>2</sub>O <br>
+
+        2<sup>2</sup> = 4<br>
+        <p>
+            I want to drink <del>cola</del> <ins>wine</ins>
+
+        </p>
+        <p>
+                I want to drink <big>cola</big> <small>wine</small>
+
+        </p>
+        <br>
+        <p>
+            Text with <strong>strong</strong> tag
+        </p>
+        <p>
+            Text with <b>b</b> tag
+        </p>
+        <p>
+            this is a <mark>Marked text</mark>
+        </p>
+</body>
+</html>
