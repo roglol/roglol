@@ -1,0 +1,430 @@
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ clear
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        GitTest/
+        ignore
+        my.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ git add -A
+warning: adding embedded git repository: GitTest
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> GitTest
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached GitTest
+hint:
+hint: See "git help submodule" for more information.
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   GitTest
+        new file:   ignore
+        new file:   my.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+        modified:   GitTest (modified content)
+
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ cd GitTest
+
+Student@LIB-08 MINGW64 /d/frontend/GitTest (testBranch)
+$ git status
+On branch testBranch
+Your branch is up to date with 'origin/testBranch'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   textBranch.txt
+
+
+Student@LIB-08 MINGW64 /d/frontend/GitTest (testBranch)
+$ git add -A
+
+Student@LIB-08 MINGW64 /d/frontend/GitTest (testBranch)
+$ cd ../
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   GitTest
+        new file:   ignore
+        new file:   my.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+        modified:   GitTest (modified content)
+
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ cd GitTest
+
+Student@LIB-08 MINGW64 /d/frontend/GitTest (testBranch)
+$ ls
+my.txt  testBranch.txt  textBranch.txt
+
+Student@LIB-08 MINGW64 /d/frontend/GitTest (testBranch)
+$ git status
+On branch testBranch
+Your branch is up to date with 'origin/testBranch'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   textBranch.txt
+
+
+Student@LIB-08 MINGW64 /d/frontend/GitTest (testBranch)
+$ commit -m "ss"
+bash: commit: command not found
+
+Student@LIB-08 MINGW64 /d/frontend/GitTest (testBranch)
+$ cd ../
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ git commit -m "sssa"
+[master (root-commit) 910927d] sssa
+ 3 files changed, 1 insertion(+)
+ create mode 160000 GitTest
+ create mode 100644 ignore
+ create mode 100644 my.txt
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+        modified:   GitTest (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 248 bytes | 248.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/roglol/proekti.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Student@LIB-08 MINGW64 /d/frontend (master)
+$ cd ..
+
+Student@LIB-08 MINGW64 /d
+$ cd..
+bash: cd..: command not found
+
+Student@LIB-08 MINGW64 /d
+$ ..
+bash: ..: command not found
+
+Student@LIB-08 MINGW64 /d
+$ ../
+bash: ../: Is a directory
+
+Student@LIB-08 MINGW64 /d
+$ cd /c
+
+Student@LIB-08 MINGW64 /c
+$ cd html
+bash: cd: html: No such file or directory
+
+Student@LIB-08 MINGW64 /c
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Student@LIB-08 MINGW64 /c
+$ cd /desktop
+bash: cd: /desktop: No such file or directory
+
+Student@LIB-08 MINGW64 /c
+$ cd html
+bash: cd: html: No such file or directory
+
+Student@LIB-08 MINGW64 /c
+$ cd /Users
+bash: cd: /Users: No such file or directory
+
+Student@LIB-08 MINGW64 /c
+$ cd Users
+
+Student@LIB-08 MINGW64 /c/Users
+$ cd Student
+
+Student@LIB-08 MINGW64 ~
+$ cd Desktop
+
+Student@LIB-08 MINGW64 ~/Desktop
+$ cd html
+
+Student@LIB-08 MINGW64 ~/Desktop/html
+$ lw
+bash: lw: command not found
+
+Student@LIB-08 MINGW64 ~/Desktop/html
+$ ls
+ amocana.html       'download (3).jpg'   list2.html
+ cars.html           download.png        list3.html
+ cxrilebi.html       dwdwa.html         'New Microsoft Word Document.docx'
+ davaleba1.html      eere.txt            page1.html
+ davaleba2.html      format.html         page2.html
+'download (1).jpg'   index.html          sa.html
+'download (2).jpg'   list.html
+
+Student@LIB-08 MINGW64 ~/Desktop/html
+$ git init
+Initialized empty Git repository in C:/Users/Student/Desktop/html/.git/
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git remote add https://github.com/roglol/proekti1.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        New Microsoft Word Document.docx
+        amocana.html
+        cars.html
+        cxrilebi.html
+        davaleba1.html
+        davaleba2.html
+        download (1).jpg
+        download (2).jpg
+        download (3).jpg
+        download.png
+        dwdwa.html
+        eere.txt
+        format.html
+        index.html
+        list.html
+        list2.html
+        list3.html
+        page1.html
+        page2.html
+        sa.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git add -A
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   New Microsoft Word Document.docx
+        new file:   amocana.html
+        new file:   cars.html
+        new file:   cxrilebi.html
+        new file:   davaleba1.html
+        new file:   davaleba2.html
+        new file:   download (1).jpg
+        new file:   download (2).jpg
+        new file:   download (3).jpg
+        new file:   download.png
+        new file:   dwdwa.html
+        new file:   eere.txt
+        new file:   format.html
+        new file:   index.html
+        new file:   list.html
+        new file:   list2.html
+        new file:   list3.html
+        new file:   page1.html
+        new file:   page2.html
+        new file:   sa.html
+
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git commit -m "gggdt"
+[master (root-commit) 312e4ea] gggdt
+ 20 files changed, 1228 insertions(+)
+ create mode 100644 New Microsoft Word Document.docx
+ create mode 100644 amocana.html
+ create mode 100644 cars.html
+ create mode 100644 cxrilebi.html
+ create mode 100644 davaleba1.html
+ create mode 100644 davaleba2.html
+ create mode 100644 download (1).jpg
+ create mode 100644 download (2).jpg
+ create mode 100644 download (3).jpg
+ create mode 100644 download.png
+ create mode 100644 dwdwa.html
+ create mode 100644 eere.txt
+ create mode 100644 format.html
+ create mode 100644 index.html
+ create mode 100644 list.html
+ create mode 100644 list2.html
+ create mode 100644 list3.html
+ create mode 100644 page1.html
+ create mode 100644 page2.html
+ create mode 100644 sa.html
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Student/Desktop/html/.git/
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git remote add origin https://github.com/roglol/roglol.git
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git push -u origin master
+Counting objects: 22, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (22/22), 41.08 KiB | 8.22 MiB/s, done.
+Total 22 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/roglol/roglol.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ ls
+ amocana.html   cxrilebi.html    davaleba2.html     'download (2).jpg'   download.png   eere.txt      index.html   list2.html  'New Microsoft Word Document.docx'   page2.html
+ cars.html      davaleba1.html  'download (1).jpg'  'download (3).jpg'   dwdwa.html     format.html   list.html    list3.html   page1.html                          sa.html
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ touch .gitignore
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git remote -v
+origin  https://github.com/roglol/roglol.git (fetch)
+origin  https://github.com/roglol/roglol.git (push)
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git add .gitignore
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git commit -m"sdwdw"
+[master 4cc8118] sdwdw
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 268 bytes | 268.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/roglol/roglol.git
+   312e4ea..4cc8118  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Student@LIB-08 MINGW64 ~/Desktop/html (master)
+$
