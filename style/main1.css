@@ -1,0 +1,18 @@
+*{
+    background-color:lightblue
+}
+
+#header1 {
+    text-align: center;
+}
+#header2 {
+    text-align: center;
+    color: limegreen;
+}
+.right {
+    text-align: right;
+}
+#header3 {
+    text-align: center;
+    color:red;
+}
