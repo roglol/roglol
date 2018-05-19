@@ -1,0 +1,49 @@
+body {
+    font-family:  Arial, Helvetica, "helvetica neue";
+}
+nav {
+    background: #333;
+    padding: .15em 0;
+    width: 100%
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li {
+margin-left: 2.5em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav.nav-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+header {
+    background: hotpink;
+    color: #fff;
+    
+    text-align: center;
+    min-height: 250px;
+
+}
+header h1 {
+    font-size: 3.5em;
+    margin: 0px;
+}
+
+article {
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+}
+
+article h1{
+    padding-top: 75px;
+}

@@ -1,0 +1,64 @@
+
+
+p.serif {
+    font-family:'Times New Roman', Times, serif
+}
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+p.oblique {
+    font-style: oblique;
+}
+
+h1.larger {
+    font-size: 3em;
+}
+p.normal {
+    font-weight: normal;
+}
+p.light {
+    font-weight: lighter;
+}
+p.thick {
+    font-weight: bold;
+}
+p.thicker {
+    font-weight: 900;
+}
+
+.elements {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: center;
+    line-height: 200px;
+
+    margin-bottom: 200px;
+}
+.elements:hover::before {
+    content: "HTML5";
+    
+    width: 100%;
+    height:100%;
+    color: red;
+}
+.elements:hover::after {
+    content: "JS(ES6)";
+    widows: 100%;
+    height:100%;
+    color: cyan;
+}
+i.fa.fa-cloud {
+    color: gold;
+}

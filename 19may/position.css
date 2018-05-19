@@ -1,0 +1,51 @@
+div.static {
+    position: static;
+    border: 3px solid #98acac;
+}
+div.relative {
+     
+    border: 3px solid #98acac;
+    position: relative;
+    left: 0px;
+    top:0px;
+}
+
+div.absolute {
+    border: 3px solid #98acac;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 100px;
+    display:none
+}
+div.relative2 {
+    position:relative;
+    width: 600px;
+    height: 300px;
+    border:3px solid black;
+    margin-top: 50px;
+}
+
+div.relative2:hover > div.absolute {
+display:block
+}
+
+div.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width:300px;
+    height:200px;
+    border: 3px solid #98acac;
+    background-color: blue;
+}
+img {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100px;
+    z-index: -1;
+    
+
+}

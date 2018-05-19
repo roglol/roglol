@@ -1,0 +1,29 @@
+    #box1 {
+    border: 10px solid black;
+    display: block;
+    border-color: red;
+    padding: 13px;
+    width: 600px;
+    height: 30px;
+    text-align: left;
+    background-color:blue
+    }
+    #box2 {
+        border: 50px solid black;
+        display: block;
+        border-color: yellow;
+        padding: 13px;
+        width: 25%;
+        height: 30px;
+        background-color: pink;
+        }
+        #box3 {
+            border: 10px solid black;
+            display: block;
+            border-color: red;
+            padding: 13px;
+            width: 600px;
+            height: 30px;
+            text-align: left;
+            background-color:blue
+            }
